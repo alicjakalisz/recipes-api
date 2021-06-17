@@ -117,7 +117,7 @@ class RecipeServiceTest {
         //mock return - findById
         Recipe recipe= new Recipe(1l, "pizza", "italian", "1232343", "flor,eggs, tomatoes");
         // expected result from the method:
-        RecipeDto expected = new RecipeDto(1l, "pasta", "italian", "1232343", "flor,eggs, tomatoes");
+        RecipeDto expected = new RecipeDto(1l, "pasta", "spanish", "1232343", "flor,eggs, tomatoes");
 
         //mocks:
         when(recipeRepository.findById(1l)).thenReturn(Optional.of(recipe));

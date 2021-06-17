@@ -154,7 +154,7 @@ class RecipeControllerTest {
                 .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isCreated())
                 .andExpect(MockMvcResultMatchers.jsonPath("$.id").exists())
-                .andExpect(jsonPath("$.id",is(0)));
+                .andExpect(jsonPath("$.id",is(1)));
 
 
     }
