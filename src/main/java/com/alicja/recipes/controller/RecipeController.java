@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.net.URI;
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 public class RecipeController {
@@ -33,12 +34,16 @@ public class RecipeController {
     }
 
 
+
+
     @GetMapping("recipes/{id}")
     public RecipeDto getRecipeById(@PathVariable("id") Long id) {
         logger.info("find recipe by id: [{}]", id);
 
         //return RecipeDto
-        return recipeService.findRecipeById(id);
+       return recipeService.findRecipeById(id);
+
+
     }
 
     @PostMapping("recipes")
