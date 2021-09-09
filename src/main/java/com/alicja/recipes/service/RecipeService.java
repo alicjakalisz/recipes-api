@@ -77,11 +77,6 @@ public class RecipeService {
         // find max id
         // add recipe with id (max id + 1)
         // return book with id
-       /* Long currentMaxId = recipeRepository.findAllRecipes()
-                .stream()
-                .mapToLong(value -> value.getId())
-                .max()
-                .orElse(1);*/
         Recipe entityToSave = recipeMapper.fromDtoToEntity(toSave);
        // entityToSave.setId(currentMaxId + 1)
 
